@@ -1,0 +1,138 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Planner</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- ICONS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- TOP -->
+    <header class="top">
+      <div>
+        <p class="date">CHORSHANBA, 20 MAY</p>
+        <h1>Xayrli kun! ☁️</h1>
+      </div>
+
+      <button id="themeBtn" class="theme-btn">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </header>
+
+    <!-- PROGRESS -->
+    <section class="progress-card">
+      <div class="circle">
+        <span id="percent">0%</span>
+      </div>
+
+      <div class="progress-text">
+        <h3>Kunlik maqsadlar</h3>
+        <p><span id="doneCount">0</span> ta bajarildi</p>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    
+
+    <!-- TASKS -->
+    <section class="tasks">
+      <h4>BUGUNGI VAZIFALAR</h4>
+
+      <div id="taskList">
+
+        <div class="task">
+          <label class="check">
+            <input type="checkbox"/>
+            <span></span>
+          </label>
+
+          <div class="task-info">
+            <h3>Ertalab yugurish</h3>
+            <p>06:30 — 07:00</p>
+          </div>
+
+          <div class="badge">Sport</div>
+        </div>
+
+        <div class="task">
+          <label class="check">
+            <input type="checkbox"/>
+            <span></span>
+          </label>
+
+          <div class="task-info">
+            <h3>Kitob o‘qish (30 daqiqa)</h3>
+            <p>09:00 — 09:30</p>
+          </div>
+
+          <div class="badge">Aql</div>
+        </div>
+
+        <div class="task">
+          <label class="check">
+            <input type="checkbox"/>
+            <span></span>
+          </label>
+
+          <div class="task-info">
+            <h3>Vitamin C va D qabul qilish</h3>
+            <p>08:00</p>
+          </div>
+
+          <div class="badge">Sog‘liq</div>
+        </div>
+
+      </div>
+
+      <!-- ADD TASK -->
+      <div class="add-task">
+        <input id="taskInput" type="text" placeholder="Yangi vazifa qo‘shish...">
+
+        <button id="addBtn">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+
+    </section>
+
+    <!-- BOTTOM NAV -->
+    <nav class="bottom-nav">
+      <button class="nav-item active">
+        <i class="fa-solid fa-list"></i>
+        <span>REJA</span>
+      </button>
+
+      <button class="nav-item">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <span>SOG‘LIQ</span>
+      </button>
+
+      <button class="nav-center">
+        <i class="fa-solid fa-arrow-down"></i>
+      </button>
+
+      <button class="nav-item">
+        <i class="fa-solid fa-brain"></i>
+        <span>AQL</span>
+      </button>
+
+      <button class="nav-item">
+        <i class="fa-solid fa-face-smile"></i>
+        <span>KAYFIYAT</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
